@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --fonte-titulo: 'Plus Jakarta Sans';
+    --fonte-corpo: 'Inter';
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-creme font-corpo text-tinta-forte antialiased;
+  }
+
+  /* Foco sempre visivel. Nunca remover sem colocar outro no lugar. */
+  :focus-visible {
+    outline: 2px solid #12876c;
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

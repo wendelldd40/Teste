@@ -1,0 +1,36 @@
+{
+  "name": "estudevet",
+  "version": "11.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "checar": "tsc --noEmit && tsc --noEmit -p tsconfig.scripts.json",
+    "auditar": "python3 scripts/auditoria.py",
+    "testar": "tsx tests/repositorios.test.ts && tsx tests/anel.test.ts && tsx tests/progresso-s6.test.ts && tsx tests/imagem.test.ts",
+    "verificar": "npm run checar && npm run testar && npm run auditar",
+    "migrar:exportar": "tsx scripts/migracao/exportar-legado.ts",
+    "migrar:conferir": "tsx scripts/migracao/migrar.ts --arquivo legado.json --dry-run",
+    "migrar:executar": "tsx scripts/migracao/migrar.ts --arquivo legado.json --executar",
+    "questoes:validar": "tsx scripts/questoes/validar-lote.ts",
+    "questoes:importar": "tsx scripts/questoes/importar-lote.ts"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.4",
+    "@supabase/supabase-js": "^2.45.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

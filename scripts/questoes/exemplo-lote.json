@@ -1,0 +1,231 @@
+{
+  "gerado_em": "2026-08-01",
+  "questoes": [
+    {
+      "referencia": "AC-001",
+      "materia_slug": "analises-clinicas-veterinarias",
+      "assunto_slugs": [
+        "hemograma"
+      ],
+      "tipo": "assertivas",
+      "dificuldade": "dificil",
+      "enunciado": "Sobre os leucocitos granulocitos polimorfonucleares, analise as assertivas.",
+      "assertivas": [
+        {
+          "numeral": "I",
+          "texto": "Os neutrofilos sao os granulocitos mais abundantes no sangue."
+        },
+        {
+          "numeral": "II",
+          "texto": "Os basofilos possuem granulos com histamina e heparina."
+        },
+        {
+          "numeral": "III",
+          "texto": "Os eosinofilos atuam na defesa contra parasitas."
+        },
+        {
+          "numeral": "IV",
+          "texto": "Os segmentados sao precursores dos bastonetes."
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "a",
+          "texto": "Apenas IV esta incorreta",
+          "correta": true
+        },
+        {
+          "letra": "b",
+          "texto": "Apenas I e II estao corretas"
+        },
+        {
+          "letra": "c",
+          "texto": "Apenas III esta correta"
+        },
+        {
+          "letra": "d",
+          "texto": "Todas estao corretas"
+        },
+        {
+          "letra": "e",
+          "texto": "Apenas II e IV estao corretas"
+        }
+      ],
+      "comentario": "Bastonetes sao precursores dos segmentados, e nao o contrario. As demais descrevem corretamente cada granulocito."
+    },
+    {
+      "referencia": "AC-002",
+      "materia_slug": "analises-clinicas-veterinarias",
+      "enunciado": "Qual o principal parametro para diagnosticar anemia em caes?",
+      "alternativas": [
+        {
+          "letra": "a",
+          "texto": "Hematocrito abaixo de 37%"
+        },
+        {
+          "letra": "b",
+          "texto": "Hematocrito acima de 55%"
+        },
+        {
+          "letra": "c",
+          "texto": "Contagem de plaquetas"
+        },
+        {
+          "letra": "d",
+          "texto": "Contagem de leucocitos"
+        },
+        {
+          "letra": "e",
+          "texto": "Nivel de glicose"
+        }
+      ],
+      "gabarito": "A",
+      "comentario": "O hematocrito de referencia em caes fica entre 37 e 55 por cento.",
+      "assunto_slugs": [
+        "hemograma"
+      ]
+    },
+    {
+      "referencia": "FA-001",
+      "materia_slug": "farmacologia-veterinaria-e-toxicologia",
+      "enunciado": "Qual e o principal sitio de metabolizacao de farmacos no organismo animal?",
+      "alternativas": [
+        {
+          "letra": "a",
+          "texto": "Figado",
+          "correta": true
+        },
+        {
+          "letra": "b",
+          "texto": "Rim"
+        },
+        {
+          "letra": "c",
+          "texto": "Pulmao"
+        },
+        {
+          "letra": "d",
+          "texto": "Baco"
+        },
+        {
+          "letra": "e",
+          "texto": "Pele"
+        }
+      ],
+      "comentario": "O figado concentra as enzimas do metabolismo de primeira passagem.",
+      "assunto_slugs": [
+        "farmacocinetica"
+      ]
+    },
+    {
+      "referencia": "FA-002",
+      "materia_slug": "farmacologia-veterinaria-e-toxicologia",
+      "enunciado": "Qual via de administracao apresenta biodisponibilidade de 100 por cento?",
+      "alternativas": [
+        {
+          "letra": "a",
+          "texto": "Oral"
+        },
+        {
+          "letra": "b",
+          "texto": "Intravenosa",
+          "correta": true
+        },
+        {
+          "letra": "c",
+          "texto": "Subcutanea"
+        },
+        {
+          "letra": "d",
+          "texto": "Intramuscular"
+        },
+        {
+          "letra": "e",
+          "texto": "Intraperitoneal"
+        }
+      ],
+      "gabarito": "B",
+      "comentario": "A via intravenosa dispensa a fase de absorcao.",
+      "assunto_slugs": [
+        "farmacocinetica"
+      ]
+    },
+    {
+      "referencia": "PA-001",
+      "materia_slug": "patologia-veterinaria-geral",
+      "enunciado": "Qual alteracao celular caracteriza a necrose de coagulacao?",
+      "alternativas": [
+        {
+          "letra": "a",
+          "texto": "Manutencao do contorno celular com perda do nucleo",
+          "correta": true
+        },
+        {
+          "letra": "b",
+          "texto": "Liquefacao completa do tecido"
+        },
+        {
+          "letra": "c",
+          "texto": "Deposicao de calcio exclusivamente"
+        },
+        {
+          "letra": "d",
+          "texto": "Proliferacao de fibroblastos"
+        },
+        {
+          "letra": "e",
+          "texto": "Formacao de granuloma"
+        }
+      ],
+      "comentario": "Comentario suficientemente longo para passar na regra.",
+      "assunto_slugs": [
+        "necrose"
+      ]
+    },
+    {
+      "referencia": "PA-002",
+      "materia_slug": "patologia-veterinaria-geral",
+      "tipo": "julgamento",
+      "enunciado": "Julgue as assertivas sobre inflamacao aguda.",
+      "assertivas": [
+        {
+          "numeral": "I",
+          "texto": "A vasodilatacao e um evento inicial.",
+          "correta": true
+        },
+        {
+          "numeral": "II",
+          "texto": "O edema decorre do aumento de permeabilidade.",
+          "correta": true
+        }
+      ],
+      "alternativas": [
+        {
+          "letra": "a",
+          "texto": "I e II corretas",
+          "correta": true
+        },
+        {
+          "letra": "b",
+          "texto": "Apenas I"
+        },
+        {
+          "letra": "c",
+          "texto": "Apenas II"
+        },
+        {
+          "letra": "d",
+          "texto": "Nenhuma"
+        },
+        {
+          "letra": "e",
+          "texto": "Faltam dados"
+        }
+      ],
+      "comentario": "Ambos os eventos ocorrem na inflamacao aguda, em sequencia.",
+      "assunto_slugs": [
+        "inflamacao"
+      ]
+    }
+  ]
+}

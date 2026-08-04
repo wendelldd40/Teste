@@ -1,0 +1,44 @@
+# Roda a cada push e pull request: tipos, testes e auditoria.
+#
+# Nenhuma chave e necessaria - as tres verificacoes rodam sem tocar o banco.
+# E de proposito: CI que depende de segredo trava quando o segredo expira.
+name: verificar
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Facilita diagnosticar quando algo falha so no CI e nao na sua maquina.
+      - name: Versoes
+        run: |
+          node --version
+          npm --version
+          python3 --version
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Checar tipos
+        run: npm run checar
+
+      - name: Rodar testes
+        run: npm run testar
+
+      - name: Auditar RLS, rotas, telas e ambiente
+        run: npm run auditar

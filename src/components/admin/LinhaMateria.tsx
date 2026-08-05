@@ -28,7 +28,7 @@ export function LinhaMateria({ materia }: { materia: MateriaDaLista }) {
     iniciar(async () => {
       const r = await salvarMateria(materia.id, campos)
       if (!r.ok) {
-        setErro({ mensagem: r.mensagem ?? 'Nao foi possivel salvar.', detalhe: r.detalhe })
+        setErro({ mensagem: r.mensagem ?? 'Não foi possível salvar.', detalhe: r.detalhe })
         if (campos.ativa !== undefined) setAtiva(!campos.ativa)
       }
     })
@@ -47,7 +47,7 @@ export function LinhaMateria({ materia }: { materia: MateriaDaLista }) {
         <div className="min-w-48 flex-1">
           <p className="font-titulo text-base font-bold text-tinta-forte">{materia.nome}</p>
           <p className="font-corpo text-xs text-tinta-fraca">
-            {materia.imagem_url ? 'Capa propria' : 'Capa provisoria'}
+            {materia.imagem_url ? 'Capa própria' : 'Capa provisoria'}
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export function LinhaMateria({ materia }: { materia: MateriaDaLista }) {
       {aberta && (
         <div className="mt-5 grid gap-6 border-t border-tinta-fraca/15 pt-5 md:grid-cols-2">
           <div className="space-y-4">
-            <Campo rotulo="Descricao" dica="Aparece no card e no topo da materia.">
+            <Campo rotulo="Descrição" dica="Aparece no card e no topo da matéria.">
               <Entrada
                 value={descricao}
                 onChange={(e) => setDescricao(e.target.value)}

@@ -16,8 +16,8 @@ export default async function PaginaResumo() {
   if (!r.ok) {
     return (
       <Erro
-        mensagem="Nao foi possivel carregar os numeros."
-        detalhe="Recarregue a pagina. Se continuar, verifique a conexao com o banco."
+        mensagem="Não foi possível carregar os números."
+        detalhe="Recarregue a página. Se continuar, verifique a conexao com o banco."
       />
     )
   }
@@ -31,10 +31,10 @@ export default async function PaginaResumo() {
           Conteudo
         </h2>
         <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-4">
-          <Indicador valor={data.questoes_publicadas} rotulo="Questoes no ar" />
+          <Indicador valor={data.questoes_publicadas} rotulo="Questões no ar" />
           <Indicador
             valor={data.questoes_revisao}
-            rotulo="Esperando revisao"
+            rotulo="Esperando revisão"
             destaque={data.questoes_revisao > 0}
           />
           <Indicador valor={data.questoes_rascunho} rotulo="Rascunhos" />
@@ -47,8 +47,8 @@ export default async function PaginaResumo() {
           Catalogo
         </h2>
         <div className="mt-3 grid grid-cols-2 gap-3 md:grid-cols-4">
-          <Indicador valor={data.materias_ativas} rotulo="Materias no ar" />
-          <Indicador valor={data.materias_total} rotulo="Materias cadastradas" />
+          <Indicador valor={data.materias_ativas} rotulo="Matérias no ar" />
+          <Indicador valor={data.materias_total} rotulo="Matérias cadastradas" />
           <Indicador
             valor={data.materias_sem_imagem}
             rotulo="Sem capa"

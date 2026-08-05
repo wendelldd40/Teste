@@ -71,9 +71,9 @@ export function PainelAssuntos({
       })
       if (!r.ok) {
         setErro({
-          mensagem: r.mensagem ?? 'Nao foi possivel criar o assunto.',
+          mensagem: r.mensagem ?? 'Não foi possível criar o assunto.',
           detalhe:
-            r.mensagem?.includes('ja existe')
+            r.mensagem?.includes('já existe')
               ? `Ja existe um assunto com o endereco "${slug}" nesta materia.`
               : r.detalhe,
         })
@@ -100,7 +100,7 @@ export function PainelAssuntos({
     iniciar(async () => {
       const r = await removerAssunto(id)
       if (!r.ok) {
-        setErro({ mensagem: r.mensagem ?? 'Nao foi possivel remover.', detalhe: r.detalhe })
+        setErro({ mensagem: r.mensagem ?? 'Não foi possível remover.', detalhe: r.detalhe })
         return
       }
       // Remove o assunto e os filhos dele, que o banco derruba em cascata.

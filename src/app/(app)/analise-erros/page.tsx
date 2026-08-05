@@ -37,8 +37,8 @@ export default async function PaginaAnaliseErros() {
   if (!materias.ok) {
     return (
       <Erro
-        mensagem="Nao foi possivel carregar seu desempenho."
-        detalhe="Recarregue a pagina para tentar de novo."
+        mensagem="Não foi possível carregar seu desempenho."
+        detalhe="Recarregue a página para tentar de novo."
       />
     )
   }
@@ -46,8 +46,8 @@ export default async function PaginaAnaliseErros() {
   if (materias.dados.length === 0) {
     return (
       <Vazio
-        titulo="Ainda nao ha erros para analisar"
-        descricao="Esta tela mostra onde voce mais erra, por materia e por assunto. Ela ganha vida depois do primeiro simulado."
+        titulo="Ainda não ha erros para analisar"
+        descricao="Esta tela mostra onde você mais erra, por matéria e por assunto. Ela ganha vida depois do primeiro simulado."
         acao={
           <Link
             href="/simulados"
@@ -65,7 +65,7 @@ export default async function PaginaAnaliseErros() {
   return (
     <div className="space-y-8">
       <header>
-        <h1 className="font-titulo text-2xl font-extrabold text-casca">Analise de Erros</h1>
+        <h1 className="font-titulo text-2xl font-extrabold text-casca">Análise de Erros</h1>
         <p className="mt-1 font-corpo text-sm text-tinta-media">
           O que aparece aqui e o seu proprio historico, nao media de turma.
         </p>

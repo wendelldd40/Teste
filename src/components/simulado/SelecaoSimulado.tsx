@@ -61,7 +61,7 @@ export function SelecaoSimulado({
         <div className="mt-2 flex flex-wrap gap-2">
           {(
             [
-              ['materia', 'Uma materia'],
+              ['materia', 'Uma matéria'],
               ['assunto', 'Um assunto'],
               ['geral', 'Tudo misturado'],
             ] as const
@@ -85,7 +85,7 @@ export function SelecaoSimulado({
 
       {escopo !== 'geral' && (
         <label className="block">
-          <span className="font-corpo text-sm font-semibold text-tinta-forte">Materia</span>
+          <span className="font-corpo text-sm font-semibold text-tinta-forte">Matéria</span>
           <Selecao
             value={materiaId}
             onChange={(e) => {
@@ -122,7 +122,7 @@ export function SelecaoSimulado({
       )}
 
       <div>
-        <p className="font-corpo text-sm font-semibold text-tinta-forte">Quantas questoes</p>
+        <p className="font-corpo text-sm font-semibold text-tinta-forte">Quantas questões</p>
         <div className="mt-2 flex flex-wrap gap-2">
           {QUANTIDADES.map((q) => (
             <button

@@ -14,8 +14,8 @@ export default async function PaginaMaterias() {
   if (!r.ok) {
     return (
       <Erro
-        mensagem="Nao foi possivel carregar as materias."
-        detalhe="Recarregue a pagina para tentar de novo."
+        mensagem="Não foi possível carregar as matérias."
+        detalhe="Recarregue a página para tentar de novo."
       />
     )
   }
@@ -24,7 +24,7 @@ export default async function PaginaMaterias() {
   if (materias.length === 0) {
     return (
       <Vazio
-        titulo="Nenhuma materia cadastrada"
+        titulo="Nenhuma matéria cadastrada"
         descricao="Rode o seed da matriz curricular para popular o catalogo."
       />
     )

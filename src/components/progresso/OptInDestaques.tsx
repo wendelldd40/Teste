@@ -48,7 +48,7 @@ export function OptInDestaques({
             Aparecer nesta lista
           </span>
           <span className="mt-0.5 block font-corpo text-xs text-tinta-fraca">
-            Seu nome e seus dias de estudo ficam visiveis para os outros alunos. Pode
+            Seu nome e seus dias de estudo ficam visíveis para os outros alunos. Pode
             desligar quando quiser.
           </span>
         </span>

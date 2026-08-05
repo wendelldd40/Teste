@@ -18,8 +18,8 @@ export default async function PaginaSimulados() {
   if (!materias.ok) {
     return (
       <Erro
-        mensagem="Nao foi possivel carregar as materias."
-        detalhe="Recarregue a pagina para tentar de novo."
+        mensagem="Não foi possível carregar as matérias."
+        detalhe="Recarregue a página para tentar de novo."
       />
     )
   }
@@ -29,8 +29,8 @@ export default async function PaginaSimulados() {
   if (liberadas.length === 0) {
     return (
       <Vazio
-        titulo="Nenhuma materia liberada"
-        descricao="Simulados usam as questoes das materias que voce assinou. Assim que uma for liberada, ela aparece aqui."
+        titulo="Nenhuma matéria liberada"
+        descricao="Simulados usam as questões das matérias que você assinou. Assim que uma for liberada, ela aparece aqui."
       />
     )
   }
@@ -66,7 +66,7 @@ export default async function PaginaSimulados() {
       {sessao && (
         <Cartao className="flex flex-wrap items-center justify-between gap-3 bg-casca text-white">
           <div>
-            <p className="font-titulo text-base font-bold">Voce tem um simulado em andamento</p>
+            <p className="font-titulo text-base font-bold">Você tem um simulado em andamento</p>
             <p className="mt-0.5 font-corpo text-sm text-white/70">
               Parou na questao {sessao.indice_atual + 1} de {sessao.total_questoes}.
             </p>

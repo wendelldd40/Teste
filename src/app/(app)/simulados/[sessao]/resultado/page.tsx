@@ -19,7 +19,7 @@ export default async function PaginaResultado({
   if (!r.ok || r.dados.length === 0) {
     return (
       <Erro
-        mensagem="Este resultado ainda nao esta disponivel."
+        mensagem="Este resultado ainda não está disponível."
         detalhe="O resultado aparece depois que o simulado e finalizado."
       />
     )
@@ -35,8 +35,8 @@ export default async function PaginaResultado({
         <h1 className="font-titulo text-2xl font-extrabold text-casca">Resultado</h1>
         <p className="mt-1 font-corpo text-sm text-tinta-media">
           {taxa >= 70
-            ? 'Bom desempenho. Vale olhar so o que escapou.'
-            : 'Os erros abaixo sao o material de estudo mais util que voce tem agora.'}
+            ? 'Bom desempenho. Vale olhar só o que escapou.'
+            : 'Os erros abaixo são o material de estudo mais util que você tem agora.'}
         </p>
       </header>
 

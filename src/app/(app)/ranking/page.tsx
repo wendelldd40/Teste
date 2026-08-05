@@ -14,13 +14,13 @@ export default function PaginaRanking() {
   return (
     <Vazio
       titulo="Ranking desligado"
-      descricao="Comparar alunos de periodos diferentes num placar unico atrapalha mais do que ajuda. Quando houver turmas, a comparacao passa a fazer sentido e esta tela volta. Por enquanto, o bloco de constancia da semana fica em Evolucao."
+      descricao="Comparar alunos de períodos diferentes num placar único atrapalha mais do que ajuda. Quando houver turmas, a comparação passa a fazer sentido e esta tela volta. Por enquanto, o bloco de constância da semana fica em Evolução."
       acao={
         <Link
           href="/evolucao"
           className="rounded-pequeno bg-acao px-4 py-2.5 font-corpo text-sm font-semibold text-white transition-colors hover:bg-casca focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-acao"
         >
-          Ir para Evolucao
+          Ir para Evolução
         </Link>
       }
     />

@@ -21,8 +21,8 @@ export default async function PaginaPerfil() {
   if (!meta.ok) {
     return (
       <Erro
-        mensagem="Nao foi possivel carregar seu perfil."
-        detalhe="Recarregue a pagina para tentar de novo."
+        mensagem="Não foi possível carregar seu perfil."
+        detalhe="Recarregue a página para tentar de novo."
       />
     )
   }
@@ -46,7 +46,7 @@ export default async function PaginaPerfil() {
 
       <Cartao>
         <h2 className="font-titulo text-sm font-bold uppercase tracking-wide text-tinta-fraca">
-          Materias liberadas
+          Matérias liberadas
         </h2>
         {liberadas.length > 0 ? (
           <ul className="mt-3 space-y-1.5">

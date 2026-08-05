@@ -28,8 +28,8 @@ export default async function PaginaEvolucao() {
   if (!serie.ok) {
     return (
       <Erro
-        mensagem="Nao foi possivel carregar sua evolucao."
-        detalhe="Recarregue a pagina para tentar de novo."
+        mensagem="Não foi possível carregar sua evolução."
+        detalhe="Recarregue a página para tentar de novo."
       />
     )
   }
@@ -42,7 +42,7 @@ export default async function PaginaEvolucao() {
   return (
     <div className="space-y-8">
       <header>
-        <h1 className="font-titulo text-2xl font-extrabold text-casca">Evolucao</h1>
+        <h1 className="font-titulo text-2xl font-extrabold text-casca">Evolução</h1>
         <p className="mt-1 font-corpo text-sm text-tinta-media">
           Como seu acerto se move ao longo das semanas.
         </p>
@@ -51,7 +51,7 @@ export default async function PaginaEvolucao() {
       {serie.dados.length === 0 ? (
         <Vazio
           titulo="A curva comeca no primeiro simulado"
-          descricao="Cada semana com questoes respondidas vira um ponto aqui."
+          descricao="Cada semana com questões respondidas vira um ponto aqui."
           acao={
             <Link
               href="/simulados"
@@ -64,11 +64,11 @@ export default async function PaginaEvolucao() {
       ) : (
         <>
           <div className="grid grid-cols-3 gap-3">
-            <Indicador valor={totalRespondidas} rotulo="Questoes em 60 dias" />
+            <Indicador valor={totalRespondidas} rotulo="Questões em 60 dias" />
             <Indicador valor={diasEstudados} rotulo="Dias estudados" />
             <Indicador
               valor={streak.ok ? streak.dados.recorde : 0}
-              rotulo="Maior sequencia"
+              rotulo="Maior sequência"
               destaque
             />
           </div>
@@ -110,7 +110,7 @@ export default async function PaginaEvolucao() {
                 <span className="min-w-0 truncate font-corpo text-sm font-semibold text-tinta-forte">
                   {c.nome}
                   {c.sou_eu && (
-                    <span className="ml-2 font-corpo text-xs font-normal text-acao">voce</span>
+                    <span className="ml-2 font-corpo text-xs font-normal text-acao">você</span>
                   )}
                 </span>
                 <span className="shrink-0 font-corpo text-sm tabular-nums text-tinta-media">

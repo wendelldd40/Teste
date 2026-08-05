@@ -50,14 +50,14 @@ export function UploadCapa({ materiaId, nome, slug, imagemAtual }: Props) {
 
       const r = await salvarImagemMateria(materiaId, caminho, comoArquivo, nome)
       if (!r.ok) {
-        setErro({ mensagem: r.mensagem ?? 'Nao foi possivel salvar a capa.', detalhe: r.detalhe })
+        setErro({ mensagem: r.mensagem ?? 'Não foi possível salvar a capa.', detalhe: r.detalhe })
         setPrevia(imagemAtual)
         return
       }
       if (r.id) setPrevia(r.id)
     } catch (e) {
       setErro({
-        mensagem: 'Nao foi possivel preparar a imagem.',
+        mensagem: 'Não foi possível preparar a imagem.',
         detalhe: e instanceof Error ? e.message : undefined,
       })
       setPrevia(imagemAtual)

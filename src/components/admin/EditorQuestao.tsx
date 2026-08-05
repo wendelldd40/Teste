@@ -53,7 +53,7 @@ export function pendenciasParaPublicar(q: {
 }): string[] {
   const faltas: string[] = []
 
-  if (q.enunciado.trim().length < 10) faltas.push('O enunciado esta muito curto.')
+  if (q.enunciado.trim().length < 10) faltas.push('O enunciado está muito curto.')
 
   const preenchidas = q.alternativas.filter((a) => a.texto.trim().length > 0)
   if (preenchidas.length !== 5) {
@@ -61,19 +61,19 @@ export function pendenciasParaPublicar(q: {
   }
 
   const corretas = q.alternativas.filter((a) => a.correta)
-  if (corretas.length === 0) faltas.push('Nenhuma alternativa esta marcada como correta.')
-  if (corretas.length > 1) faltas.push('Mais de uma alternativa esta marcada como correta.')
+  if (corretas.length === 0) faltas.push('Nenhuma alternativa está marcada como correta.')
+  if (corretas.length > 1) faltas.push('Mais de uma alternativa está marcada como correta.')
 
   if (q.tipo !== 'multipla_escolha') {
     const comTexto = q.assertivas.filter((a) => a.texto.trim().length > 0)
-    if (comTexto.length < 2) faltas.push('Questao de assertivas precisa de ao menos duas.')
+    if (comTexto.length < 2) faltas.push('Questão de assertivas precisa de ao menos duas.')
     if (q.tipo === 'julgamento' && comTexto.some((a) => a.correta === null)) {
-      faltas.push('Toda assertiva precisa de gabarito neste tipo de questao.')
+      faltas.push('Toda assertiva precisa de gabarito neste tipo de questão.')
     }
   }
 
   if (!q.comentario || q.comentario.trim().length === 0) {
-    faltas.push('Sem comentario: o aluno nao vai entender por que errou.')
+    faltas.push('Sem comentário: o aluno não vai entender por que errou.')
   }
 
   return faltas
@@ -126,11 +126,11 @@ export function EditorQuestao({ inicial }: { inicial: QuestaoParaEditar }) {
         assunto_ids: q.assunto_ids,
       })
       if (!r.ok) {
-        setErro({ mensagem: r.mensagem ?? 'Nao foi possivel salvar.', detalhe: r.detalhe })
+        setErro({ mensagem: r.mensagem ?? 'Não foi possível salvar.', detalhe: r.detalhe })
         return
       }
       setQ((atual) => ({ ...atual, status }))
-      setAviso('Alteracoes salvas.')
+      setAviso('Alterações salvas.')
     })
   }
 
@@ -141,13 +141,13 @@ export function EditorQuestao({ inicial }: { inicial: QuestaoParaEditar }) {
       const r = await publicarQuestao(q.id)
       if (!r.ok) {
         setErro({
-          mensagem: r.mensagem ?? 'O banco recusou a publicacao.',
+          mensagem: r.mensagem ?? 'O banco recusou a publicação.',
           detalhe: r.detalhe,
         })
         return
       }
       setQ((atual) => ({ ...atual, status: 'publicada' }))
-      setAviso('Questao publicada.')
+      setAviso('Questão publicada.')
     })
   }
 
@@ -165,9 +165,9 @@ export function EditorQuestao({ inicial }: { inicial: QuestaoParaEditar }) {
           onChange={(e) => setQ({ ...q, dificuldade: e.target.value as Dificuldade })}
           className="w-40"
         >
-          <option value="facil">Facil</option>
-          <option value="medio">Medio</option>
-          <option value="dificil">Dificil</option>
+          <option value="facil">Fácil</option>
+          <option value="medio">Médio</option>
+          <option value="dificil">Difícil</option>
         </Selecao>
       </div>
 
@@ -230,7 +230,7 @@ export function EditorQuestao({ inicial }: { inicial: QuestaoParaEditar }) {
         </div>
       </div>
 
-      <Campo rotulo="Comentario" dica="O que o aluno le depois de responder.">
+      <Campo rotulo="Comentário" dica="O que o aluno le depois de responder.">
         <AreaTexto
           value={q.comentario ?? ''}
           onChange={(e) => setQ({ ...q, comentario: e.target.value })}

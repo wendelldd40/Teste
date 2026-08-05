@@ -54,8 +54,8 @@ export default async function PaginaMateria({
     if (materia.erro.codigo === 'nao_encontrado') notFound()
     return (
       <Erro
-        mensagem="Nao foi possivel abrir esta materia."
-        detalhe="Recarregue a pagina para tentar de novo."
+        mensagem="Não foi possível abrir esta matéria."
+        detalhe="Recarregue a página para tentar de novo."
       />
     )
   }
@@ -80,7 +80,7 @@ export default async function PaginaMateria({
         />
         <Vazio
           titulo={`${materia.dados.nome} ainda nao esta liberada`}
-          descricao="Voce consegue ver todas as materias do curso, mas so estuda as que estao liberadas para a sua conta. Fale com a coordenacao para liberar esta."
+          descricao="Você consegue ver todas as matérias do curso, mas só estuda as que estão liberadas para a sua conta. Fale com a coordenação para liberar está."
           acao={
             <Link
               href="/estudar"
@@ -127,9 +127,9 @@ export default async function PaginaMateria({
         href="/simulados"
         className="block rounded-cartao bg-casca p-5 text-white shadow-cartao transition-transform hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-acao"
       >
-        <p className="font-titulo text-base font-bold">Fazer simulado desta materia</p>
+        <p className="font-titulo text-base font-bold">Fazer simulado desta matéria</p>
         <p className="mt-0.5 font-corpo text-sm text-white/70">
-          Questoes sorteadas entre os assuntos abaixo.
+          Questões sorteadas entre os assuntos abaixo.
         </p>
       </Link>
 

@@ -19,8 +19,8 @@ export default async function PaginaAssuntos() {
   if (!resultadoMaterias.ok || !resultadoAssuntos.ok) {
     return (
       <Erro
-        mensagem="Nao foi possivel carregar os assuntos."
-        detalhe="Recarregue a pagina para tentar de novo."
+        mensagem="Não foi possível carregar os assuntos."
+        detalhe="Recarregue a página para tentar de novo."
       />
     )
   }
@@ -31,8 +31,8 @@ export default async function PaginaAssuntos() {
   if (materias.length === 0) {
     return (
       <Vazio
-        titulo="Nenhuma materia no ar"
-        descricao="Ligue ao menos uma materia para organizar os assuntos dela."
+        titulo="Nenhuma matéria no ar"
+        descricao="Ligue ao menos uma matéria para organizar os assuntos dela."
       />
     )
   }

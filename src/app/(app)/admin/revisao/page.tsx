@@ -16,8 +16,8 @@ export default async function PaginaRevisao() {
   if (!resultadoFila.ok) {
     return (
       <Erro
-        mensagem="Nao foi possivel carregar a fila."
-        detalhe="Recarregue a pagina para tentar de novo."
+        mensagem="Não foi possível carregar a fila."
+        detalhe="Recarregue a página para tentar de novo."
       />
     )
   }
@@ -28,7 +28,7 @@ export default async function PaginaRevisao() {
     return (
       <Vazio
         titulo="Fila vazia"
-        descricao="Nenhuma questao esperando revisao. Quando a migracao trouxer questoes incompletas, elas aparecem aqui."
+        descricao="Nenhuma questão esperando revisão. Quando a migração trouxer questões incompletas, elas aparecem aqui."
       />
     )
   }
@@ -44,7 +44,7 @@ export default async function PaginaRevisao() {
     questoes.push({
       id: data.questao.id,
       materia_id: data.questao.materia_id,
-      materia_nome: item.materias?.nome ?? 'Sem materia',
+      materia_nome: item.materias?.nome ?? 'Sem matéria',
       tipo: data.questao.tipo,
       dificuldade: data.questao.dificuldade,
       enunciado: data.questao.enunciado,
@@ -68,7 +68,7 @@ export default async function PaginaRevisao() {
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="font-titulo text-xl font-extrabold text-casca">Fila de revisao</h2>
+        <h2 className="font-titulo text-xl font-extrabold text-casca">Fila de revisão</h2>
         <p className="mt-1 font-corpo text-sm text-tinta-media">
           {questoes.length} questoes prontas para conferir. Publicar so funciona quando a
           questao esta completa.

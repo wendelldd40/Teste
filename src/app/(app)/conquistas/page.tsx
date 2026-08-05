@@ -30,8 +30,8 @@ export default async function PaginaConquistas() {
   if (!catalogo.ok) {
     return (
       <Erro
-        mensagem="Nao foi possivel carregar as conquistas."
-        detalhe="Recarregue a pagina para tentar de novo."
+        mensagem="Não foi possível carregar as conquistas."
+        detalhe="Recarregue a página para tentar de novo."
       />
     )
   }

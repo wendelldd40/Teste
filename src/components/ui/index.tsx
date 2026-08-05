@@ -7,9 +7,9 @@ import type { ReactNode, ButtonHTMLAttributes, InputHTMLAttributes, SelectHTMLAt
 type Variante = 'primaria' | 'secundaria' | 'discreta' | 'perigo'
 
 const VARIANTES: Record<Variante, string> = {
-  primaria: 'bg-acao text-white hover:bg-casca',
+  primaria: 'bg-ação text-white hover:bg-casca',
   secundaria: 'bg-cartao text-tinta-forte border border-tinta-fraca/30 hover:border-acao',
-  discreta: 'bg-transparent text-tinta-media hover:text-acao',
+  discreta: 'bg-transparent text-tinta-media hover:text-ação',
   perigo: 'bg-cartao text-red-700 border border-red-200 hover:bg-red-50',
 }
 
@@ -92,7 +92,7 @@ const TONS = {
 
 const ROTULOS = {
   publicada: 'Publicada',
-  precisa_revisao: 'Precisa revisao',
+  precisa_revisao: 'Precisa revisão',
   rascunho: 'Rascunho',
   arquivada: 'Arquivada',
 } as const

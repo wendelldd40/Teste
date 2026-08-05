@@ -35,8 +35,8 @@ export function FormularioPerfil({
     const valor = Number(meta)
     if (!Number.isInteger(valor) || valor < 5 || valor > 2000) {
       setErro({
-        mensagem: 'Meta semanal invalida.',
-        detalhe: 'Escolha um numero inteiro entre 5 e 2000.',
+        mensagem: 'Meta semanal inválida.',
+        detalhe: 'Escolha um número inteiro entre 5 e 2000.',
       })
       return
     }
@@ -81,8 +81,8 @@ export function FormularioPerfil({
       </Campo>
 
       <Campo
-        rotulo="Meta semanal de questoes"
-        dica={`O dia so conta para a sequencia com ${minimoDiario} questoes ou mais.`}
+        rotulo="Meta semanal de questões"
+        dica={`O dia só conta para a sequência com ${minimoDiario} questões ou mais.`}
       >
         <Entrada
           type="number"
@@ -108,7 +108,7 @@ export function FormularioPerfil({
           </span>
           <span className="mt-0.5 block font-corpo text-xs text-tinta-fraca">
             Seu nome e seus dias de estudo ficam visiveis para os outros alunos em
-            Evolucao. Desligado por padrao.
+            Evolução. Desligado por padrão.
           </span>
         </span>
       </label>

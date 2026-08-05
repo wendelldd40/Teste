@@ -71,8 +71,8 @@ function Formulario() {
       setErro({
         mensagem:
           modo === 'entrar'
-            ? 'Email ou senha nao conferem.'
-            : 'Nao foi possivel criar a conta.',
+            ? 'Email ou senha não conferem.'
+            : 'Não foi possível criar a conta.',
         detalhe: normalizado.detalhe,
       })
       setEnviando(false)
@@ -100,7 +100,7 @@ function Formulario() {
                 value={nome}
                 onChange={(e) => setNome(e.target.value)}
                 autoComplete="name"
-                placeholder="Como voce quer ser chamado"
+                placeholder="Como você quer ser chamado"
               />
             </Campo>
           )}
@@ -148,7 +148,7 @@ function Formulario() {
           }}
           className="mt-5 w-full font-corpo text-sm text-tinta-media transition-colors hover:text-acao focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-acao"
         >
-          {modo === 'entrar' ? 'Nao tem conta? Criar uma.' : 'Ja tem conta? Entrar.'}
+          {modo === 'entrar' ? 'Não tem conta? Criar uma.' : 'Ja tem conta? Entrar.'}
         </button>
       </div>
     </div>

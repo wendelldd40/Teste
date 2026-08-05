@@ -121,12 +121,12 @@ export function AnelProgresso({
           <span className="font-semibold tabular-nums text-tinta-forte">
             {questoesNaSemana}
           </span>{' '}
-          de {metaSemanal} questoes na semana
+          de {metaSemanal} questões na semana
         </p>
         <p className="mt-1 font-corpo text-xs text-tinta-fraca">
           {hojeContou
-            ? 'Hoje ja conta para a sequencia.'
-            : 'Hoje ainda nao conta. Faltam questoes para fechar o dia.'}
+            ? 'Hoje já conta para a sequência.'
+            : 'Hoje ainda não conta. Faltam questões para fechar o dia.'}
         </p>
       </div>
     </div>

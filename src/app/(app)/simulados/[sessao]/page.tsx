@@ -22,7 +22,7 @@ export default async function PaginaSessao({
   if (!r.ok) {
     return (
       <Erro
-        mensagem="Nao foi possivel abrir este simulado."
+        mensagem="Não foi possível abrir este simulado."
         detalhe="Volte para Simulados e monte um novo."
       />
     )

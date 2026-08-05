@@ -37,7 +37,7 @@ export function CartaoMateria({ materia }: { materia: DadosCartaoMateria }) {
         />
         {!liberada && (
           <span className="absolute right-3 top-3 rounded-full bg-casca/90 px-2.5 py-1 font-corpo text-xs font-semibold text-white">
-            Nao liberada
+            Não liberada
           </span>
         )}
       </div>
@@ -53,7 +53,7 @@ export function CartaoMateria({ materia }: { materia: DadosCartaoMateria }) {
           {materia.ch_total !== null && <span>{materia.ch_total} h</span>}
           {materia.questoes !== undefined && (
             <span>
-              {materia.questoes} {materia.questoes === 1 ? 'questao' : 'questoes'}
+              {materia.questoes} {materia.questoes === 1 ? 'questão' : 'questões'}
             </span>
           )}
         </div>

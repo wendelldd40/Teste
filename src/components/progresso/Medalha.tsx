@@ -3,7 +3,7 @@
  *
  * Desenhadas em SVG, na paleta da marca - nada de emoji e nada de icone de
  * biblioteca. A forma muda com a familia da conquista, entao "sete dias
- * seguidos" e "mil questoes" nao viram a mesma figura com texto diferente.
+ * seguidos" e "mil questões" nao viram a mesma figura com texto diferente.
  *
  * Tres estados: conquistada (dourado cheio), em progresso (contorno com o
  * arco do quanto falta) e bloqueada (silhueta apagada).

@@ -13,8 +13,8 @@ export default async function PaginaEstudar() {
   if (!materias.ok) {
     return (
       <Erro
-        mensagem="Nao foi possivel carregar as materias."
-        detalhe="Recarregue a pagina para tentar de novo."
+        mensagem="Não foi possível carregar as matérias."
+        detalhe="Recarregue a página para tentar de novo."
       />
     )
   }
@@ -22,8 +22,8 @@ export default async function PaginaEstudar() {
   if (materias.dados.length === 0) {
     return (
       <Vazio
-        titulo="Nenhuma materia no ar"
-        descricao="Assim que uma materia for liberada, ela aparece aqui."
+        titulo="Nenhuma matéria no ar"
+        descricao="Assim que uma matéria for liberada, ela aparece aqui."
       />
     )
   }

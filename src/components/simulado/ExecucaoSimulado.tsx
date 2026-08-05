@@ -51,7 +51,7 @@ export function ExecucaoSimulado({ inicial }: { inicial: SessaoCarregada }) {
   if (!atual) {
     return (
       <Erro
-        mensagem="Esta sessao nao tem questoes."
+        mensagem="Esta sessão não tem questões."
         detalhe="Volte para Simulados e monte um novo."
       />
     )
@@ -104,12 +104,12 @@ export function ExecucaoSimulado({ inicial }: { inicial: SessaoCarregada }) {
       <div>
         <div className="flex items-baseline justify-between">
           <p className="font-corpo text-sm font-semibold text-tinta-forte">
-            Questao {indice + 1} de {questoes.length}
+            Questão {indice + 1} de {questoes.length}
           </p>
           <p className="font-corpo text-xs text-tinta-fraca">
-            {atual.questao.dificuldade === 'facil' && 'Facil'}
-            {atual.questao.dificuldade === 'medio' && 'Medio'}
-            {atual.questao.dificuldade === 'dificil' && 'Dificil'}
+            {atual.questao.dificuldade === 'facil' && 'Fácil'}
+            {atual.questao.dificuldade === 'medio' && 'Médio'}
+            {atual.questao.dificuldade === 'dificil' && 'Difícil'}
           </p>
         </div>
         <div
@@ -186,7 +186,7 @@ export function ExecucaoSimulado({ inicial }: { inicial: SessaoCarregada }) {
             <p
               className={`font-titulo text-sm font-bold ${resposta.acertou ? 'text-acao' : 'text-ouro-tinta'}`}
             >
-              {resposta.acertou ? 'Voce acertou.' : 'Resposta errada.'}
+              {resposta.acertou ? 'Você acertou.' : 'Resposta errada.'}
             </p>
             {resposta.comentario && (
               <p className="mt-1.5 font-corpo text-sm leading-relaxed text-tinta-media">
@@ -204,7 +204,7 @@ export function ExecucaoSimulado({ inicial }: { inicial: SessaoCarregada }) {
           Pode sair a hora que quiser. A sessao fica salva.
         </p>
         <Botao disabled={!respondida} carregando={enviando} onClick={() => void avancar()}>
-          {ultima ? 'Ver resultado' : 'Proxima questao'}
+          {ultima ? 'Ver resultado' : 'Próxima questão'}
         </Botao>
       </div>
     </div>

@@ -10,7 +10,7 @@ const ABAS = [
   { href: '/admin', rotulo: 'Resumo' },
   { href: '/admin/materias', rotulo: 'Materias' },
   { href: '/admin/assuntos', rotulo: 'Assuntos' },
-  { href: '/admin/revisao', rotulo: 'Fila de revisao' },
+  { href: '/admin/revisao', rotulo: 'Fila de revisão' },
 ]
 
 export default async function LayoutAdmin({ children }: { children: ReactNode }) {
@@ -21,7 +21,7 @@ export default async function LayoutAdmin({ children }: { children: ReactNode })
       <header className="border-b border-tinta-fraca/15 bg-cartao">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-4">
           <div>
-            <h1 className="font-titulo text-lg font-extrabold text-casca">Administracao</h1>
+            <h1 className="font-titulo text-lg font-extrabold text-casca">Administração</h1>
             <p className="font-corpo text-xs text-tinta-fraca">{admin.nome || admin.email}</p>
           </div>
           <nav className="flex flex-wrap gap-1">
